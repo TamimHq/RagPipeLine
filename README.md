@@ -82,15 +82,18 @@ flowchart TB
 ## Project structure
 
 ```
-ragkit/
+RagPipeLine/
+├──pdfs
 ├── ragkit_colab.ipynb     # runnable Colab notebook (orchestration only)
-├── extract.py             # text-layer quality detection, boilerplate learning
-├── sections.py            # content-based chunk classification
-├── index.py               # chunking, n-gram tokenizer, hybrid retrieval
-├── pipeline.py            # folder ingestion, RAG answerer
-├── evaluate.py            # gold generation, rank-sensitive metrics, ablation
-├── requirements.txt
+├── ragkit.zip
+|   ├── extract.py             # text-layer quality detection, boilerplate learning
+|   ├── sections.py            # content-based chunk classification
+|   ├── index.py               # chunking, n-gram tokenizer, hybrid retrieval
+|   ├── pipeline.py            # folder ingestion, RAG answerer
+|   ├── evaluate.py            # gold generation, rank-sensitive metrics, ablation
+|   └── requirements.txt
 └── README.md
+
 ```
 
 The notebook only wires things together. All logic lives in the modules, so the same code deploys as a service later without change.
