@@ -1,4 +1,4 @@
-# 📚 ragkit — Document-Agnostic Multilingual RAG
+# 📚 Multilingual RAG Pipeline
 
 A Retrieval-Augmented Generation system for question answering over **a folder of PDFs**, in **any language and any layout**. Built and measured on two deliberately different corpora: an English born-digital CV and a Bengali HSC textbook whose embedded text layer is broken.
 
